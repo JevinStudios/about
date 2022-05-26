@@ -1,0 +1,76 @@
+html,
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #008aed;
+    padding: 48px 8px;
+    box-shadow: 0 -24px 24px -16px rgba(0, 0, 0, 0.18) inset;
+}
+
+.header img {
+    width: 25vw;
+    min-width: 50px;
+    max-width: 150px;
+    margin-bottom: 8px;
+}
+
+.header h1 {
+    margin: 0;
+    margin-bottom: 32px;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+}
+
+.header p {
+    margin: 0;
+    color: rgb(211, 244, 255);
+    font-size: medium;
+    text-align: center;
+}
+
+.body {
+    width: 100%;
+    background: white;
+    padding: 16px;
+}
+
+.appinfo {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0;
+}
+
+.appinfo div:not(.valign-wrapper) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 8px 0;
+}
+
+.appinfo div:not(:last-child):not(.valign-wrapper) {
+    border-right: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.appinfo div p {
+    text-align: center;
+}
+
+.appinfo div p:last-child {
+    font-size: 12px;
+    color: rgb(41, 41, 41);
+}
+
+.appinfo div.valign-wrapper {
+    justify-content: center;
+}
+
+.page-footer {
+    background: #008aed;
+}
